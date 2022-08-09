@@ -1,0 +1,15 @@
+
+<form action="new1.php" method="post">
+<input type="text" name="user">
+<input type="text" name="pass">
+<input type="button" name="login" value="login">
+</form><?php
+
+$name=$_POST['user'];
+$lname=$_POST['pass'];
+if (isset($_POST['login'])){
+	if ($name=="sarah" and $lname=="awik"){
+	header("location : signupamateur.html");}
+	else { echo "nooo";}
+}
+?>
